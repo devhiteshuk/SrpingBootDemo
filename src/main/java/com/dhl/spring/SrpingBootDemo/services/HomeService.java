@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class HomeService {
 
-//    @Autowired
-//    private HomeRepository homeRepository;
+    @Autowired
+    private HomeRepository homeRepository;
 
     public String getHomeAddress() {
-        return "HomeAddress";
+        return "This is HomeAddress";
     }
 }
