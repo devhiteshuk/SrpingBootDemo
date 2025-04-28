@@ -1,8 +1,8 @@
-package com.dhl.spring.SrpingBootDemo.repository;
+package com.dhl.spring.SpringBootDemo.repository;
 
 import org.springframework.stereotype.Repository;
 
-@Repository
+//@Repository
 public class HomeRepository  {
 
 
