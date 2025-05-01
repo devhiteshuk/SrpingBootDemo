@@ -12,17 +12,20 @@ public class LocalUser {
     @Id
     @GeneratedValue
     private Integer userId;
-    
-
 
     private String username;
 
     private String fullName;
 
-    public LocalUser(Integer id, String username, String fullName) {
+    private Integer salary;
+
+    public LocalUser() {}
+
+    public LocalUser(Integer id, String username, String fullName, Integer salary) {
         this.userId = id;
         this.username= username;
         this.fullName = fullName;
+        this.salary = salary;
     }
 
     @Override
@@ -31,6 +34,7 @@ public class LocalUser {
                 "userId=" + userId +
                 ", username='" + username + '\'' +
                 ", fullName='" + fullName + '\'' +
+                ", salary='" + salary + '\'' +
                 '}';
     }
 
@@ -58,4 +62,11 @@ public class LocalUser {
         this.fullName = fullName;
     }
 
+    public Integer getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Integer salary) {
+        this.salary = salary;
+    }
 }
