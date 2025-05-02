@@ -15,4 +15,6 @@ public class TestRunner  implements CommandLineRunner {
         LocalUser saved = userService.addUser(newUser);
         System.out.println("Created user: " + saved);
     }
+
+
 }

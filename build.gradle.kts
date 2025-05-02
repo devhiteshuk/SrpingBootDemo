@@ -25,6 +25,8 @@ dependencies {
 	//implementation("jakarta.persistence:jakarta.persistence-api:3.0.0")
 	implementation("com.h2database:h2")
 
+	testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.2")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-test:3.4.4")
